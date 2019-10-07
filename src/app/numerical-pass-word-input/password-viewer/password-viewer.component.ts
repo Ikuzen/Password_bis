@@ -7,26 +7,26 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PasswordViewerComponent implements OnInit {
   @Input() currentNumber: string;
-  @Input() pwdFlavor:string;
-  inputType:string;
-  faType:string;
-  mouseUp =  () =>{
-    this.inputType = "password"
-    this.faType = "eye-slash"
-    removeEventListener('mouseup', this.mouseUp)
+  @Input() passwordFlavor: string;
+  inputType: string;
+  faType: string;
+  mouseUp = () => {
+    this.inputType = 'password';
+    this.faType = 'eye-slash';
+    removeEventListener('mouseup', this.mouseUp);
   }
-    
+
   constructor() { }
 
   ngOnInit() {
-    this.inputType = "password"
-    this.faType = "eye-slash"
+    this.inputType = 'password';
+    this.faType = 'eye-slash';
   }
 
-  togglePassword(){
-    this.inputType = "text"
-    this.faType = "eye"
-    addEventListener('mouseup', this.mouseUp)
+  togglePassword() {
+    this.inputType = 'text';
+    this.faType = 'eye';
+    addEventListener('mouseup', this.mouseUp);
   }
-  
+
 }

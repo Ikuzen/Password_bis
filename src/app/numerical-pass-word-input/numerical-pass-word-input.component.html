@@ -1,6 +1,6 @@
 <div class="wrapper">
-  <app-password-viewer [currentNumber]="userPassword" [pwdFlavor]="pwdFlavor"></app-password-viewer>
+  <app-password-viewer [currentNumber]="userPassword" [passwordFlavor]="passwordFlavor"></app-password-viewer>
   <app-randomized-numeric-input [currentNumber]="userPassword"
     [isBlocked]="isBlocked"
-    (onCurrentChangeNumber)="emitValue($event)"></app-randomized-numeric-input>
+    (currentChangeNumber)="emitValue($event)"></app-randomized-numeric-input>
 </div>

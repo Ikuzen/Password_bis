@@ -10,10 +10,10 @@ describe('PasswordViewerComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PasswordViewerComponent ],
-      imports: [MatGridListModule,AngularFontAwesomeModule]
+      declarations: [PasswordViewerComponent],
+      imports: [MatGridListModule, AngularFontAwesomeModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

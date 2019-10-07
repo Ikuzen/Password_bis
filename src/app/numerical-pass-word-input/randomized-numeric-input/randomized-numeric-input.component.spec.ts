@@ -10,10 +10,10 @@ describe('RandomizedNumericInputComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RandomizedNumericInputComponent ],
-      imports:[MatGridListModule,AngularFontAwesomeModule]
+      declarations: [RandomizedNumericInputComponent],
+      imports: [MatGridListModule, AngularFontAwesomeModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
