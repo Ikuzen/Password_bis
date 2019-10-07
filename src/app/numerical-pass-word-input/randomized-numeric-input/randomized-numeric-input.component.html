@@ -1,0 +1,10 @@
+<mat-grid-list cols="4" rowHeight="3:1" layout-align="center center">
+  <mat-grid-tile *ngFor="let number of this.randomArr">
+    <button mat-raised-button
+      (click)="digit(number)">{{isNumber(number)}}
+    </button>
+  </mat-grid-tile>
+    <mat-grid-tile>
+      <a href="" > Forgot your password ?</a>
+    </mat-grid-tile>
+</mat-grid-list>

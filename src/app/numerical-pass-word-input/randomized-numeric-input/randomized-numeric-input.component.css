@@ -1,0 +1,14 @@
+button{
+  background:linear-gradient(90deg,#ffda66 50%,#ffce33 0);
+  color:black;
+  font-family: fantasy;
+  background-size: 200% 100%;
+  background-position: 100% 100%;
+  transition: background-position 5s background-color 5s;
+}
+button:hover{
+  background:linear-gradient(90deg,#ffda66 0%,#ffce33 100%);
+}
+a{
+  font-size: small;
+}

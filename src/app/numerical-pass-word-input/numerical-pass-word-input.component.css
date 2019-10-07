@@ -1,0 +1,8 @@
+.wrapper{
+  display: inline-grid;
+  justify-content: center;
+  align-self: center;
+  background-color: x0F9F9F9;
+  border-style: outset;
+  /* background-image: repeating-radial-gradient(cyan, gold 10%, purple 15%); */
+}

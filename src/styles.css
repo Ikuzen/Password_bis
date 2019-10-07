@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+button{
+  background:linear-gradient(90deg,#ffda66 50%,#ffce33 0);
+  color:black;
+  font-family: fantasy;
+}
