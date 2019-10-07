@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { NumericalPassWordInputComponent } from './numerical-pass-word-input/numerical-pass-word-input.component';
 import { PasswordViewerComponent } from './numerical-pass-word-input/password-viewer/password-viewer.component';
 import { RandomizedNumericInputComponent } from './numerical-pass-word-input/randomized-numeric-input/randomized-numeric-input.component';
-import {MatGridListModule,MatToolbarModule, MatButtonModule, MatIconModule, MatListModule, MatDialogModule, MatInputModule } from '@angular/material';
-import {FormsModule} from '@angular/forms';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { MatGridListModule, MatToolbarModule, MatButtonModule, MatIconModule, MatListModule, MatDialogModule, MatInputModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     NumericalPassWordInputComponent,
     PasswordViewerComponent,
     RandomizedNumericInputComponent,
-    
+
   ],
   imports: [
     MatToolbarModule,

@@ -25,4 +25,12 @@ describe('PasswordViewerComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('togglePassword switches input and FA type correctly', () => {
+    component.inputType = 'password';
+    component.faType = 'eye-slash';
+    component.togglePassword();
+    expect(component.inputType).toBe('text');
+    expect(component.faType).toBe('eye');
+  });
 });

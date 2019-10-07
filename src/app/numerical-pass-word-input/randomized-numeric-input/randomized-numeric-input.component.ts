@@ -53,7 +53,7 @@ export class RandomizedNumericInputComponent implements OnInit {
 
   isNumber(num: number) {
     if (num != null) {
-      return num;
+      return num.toString();
 
     } else {
       return '';
