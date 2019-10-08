@@ -27,7 +27,7 @@ describe('RandomizedNumericInputComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('isNumber returns null to an empty array correctly', () => {
+  it('isNumber transforms null into an empty array correctly', () => {
     const notANumber = null;
     const aNumber = 5;
     expect(component.isNumber(notANumber)).toBe('');
@@ -40,6 +40,38 @@ describe('RandomizedNumericInputComponent', () => {
     component.digit(aNumberString);
     expect(component.currentNumber).toBe('1239');
   });
-  
+
+  it('randomArr contains exactly 1,2,3,4,5,6,7,8,9,0 and two null after the shuffle method call', () => {
+    const aRandomArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, null, null];
+    const digitComparator = {
+      0: true,
+      1: true,
+      2: true,
+      3: true,
+      4: true,
+      5: true,
+      6: true,
+      7: true,
+      8: true,
+      9: true,
+      null: true,
+    };
+    let testResult = true;
+    let nullCase = true;
+    component.shuffle(aRandomArr);
+
+    for (const num of aRandomArr) {
+      if (digitComparator[num]) {
+        digitComparator[num] = false;
+      } else {
+        if (nullCase) {
+          nullCase = false;
+        } else {
+          testResult = false;
+        }
+      }
+    }
+    expect(testResult).toBeTruthy();
+  });
 
 });
