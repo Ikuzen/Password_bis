@@ -27,12 +27,15 @@ export class NumericalPassWordInputComponent implements OnInit {
   }
 
   onFullPassword() {
-    if (this.userPassword === '123456789') {
-      this.passwordMatch = console.log('match !');
+    if (this.userPassword === '123456789') { // checks if the password is correct
+      this.correctPassword();
     } else {
       this.wrongPassword();
 
     }
+  }
+  correctPassword() {
+    this.passwordMatch = console.log('match !');
   }
 
   wrongPassword() {

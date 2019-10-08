@@ -27,14 +27,14 @@ describe('RandomizedNumericInputComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('isNumber transforms null into an empty array correctly', () => {
+  it('should return an empty array when calling isNumber(null)', () => {
     const notANumber = null;
     const aNumber = 5;
     expect(component.isNumber(notANumber)).toBe('');
     expect(component.isNumber(aNumber)).toBe('5');
   });
 
-  it('digit method pushes correct value to the emitted string', () => {
+  it('should push string to currentNumber when calling digit(string)', () => {
     const aNumberString = '9';
     component.currentNumber = '123';
     component.digit(aNumberString);
